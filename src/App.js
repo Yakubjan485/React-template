@@ -1,7 +1,6 @@
 import React from 'react'
 import "./sass/main.scss"
 import Router from "./Components/Router"
-
 const App = () => {
   return (
     <div>

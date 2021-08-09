@@ -1,11 +1,15 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import Navbar from './Navbar'
 
 const Router = () => {
      return (
-          <div className="container">
-              dvddvdvdvdvdvdv 
-          </div>
+          <BrowserRouter>
+          <Navbar />
+          <Switch>
+               <Route  />
+          </Switch>
+          </BrowserRouter>
      )
 }
 
