@@ -66,12 +66,20 @@ h1,h2,h3,h4,h5,h6 {
 
 $navbar-link: #222;
 $yellow: #f6b60b;
+$color-seriy: #555;
 
 // *********colors***************
 
 body {
+     margin-bottom: 200px;
      .main-navbar {
           padding-top: 20px;
+          position: sticky;
+          top: 0;
+          left: 0;
+          right: 0;
+          width: 100%;
+          z-index: 99;
           @media(max-width: 768px) {
                padding-bottom: 20px;
           }
@@ -176,4 +184,132 @@ body {
          
      }
      // stop navbar and its responsive
+     main {
+       .showcase {
+          background-image: url("../images/slider-2.jpg.webp");
+          width: 100%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          min-height: 700px;
+          padding-top: 100px;
+          h5 {
+               font-size: 24px;
+               color: $yellow;
+          }
+          h6 {
+               font-size: 30px;
+          }
+          p {
+               font-size: 14px;
+
+
+          }
+          a {
+               font-size: 18px;
+               color: $navbar-link;
+               background-color: $yellow;
+               padding: 17px 27px 17px 27px;
+               transition: all 0.3s ease;
+               &:hover {
+                    background-color: #fff;
+               }
+          }
+        } 
+     //    stop showcase
+     .icons-part {
+          background: #f5f5f5;
+          padding-top: 70px;
+          padding-bottom: 70px;
+          .card {
+               background: #f5f5f5;
+               span {
+               font-size: 48px;
+               color: $yellow;
+          }
+          .card-body {
+               padding-left: 0;
+               padding-right: 0;
+          h6 {
+               font-size: 18px;
+               color: $navbar-link;
+          }
+          p {
+               font-size: 14px;
+               color: $color-seriy;
+          }
+          }
+          
+          }
+     }
+     // stop icons part
+     .multi-sentences {
+          h5 {
+               font-size: 24px;
+               color: $navbar-link;
+               padding-bottom: 70px;
+               position: relative;
+               &::after {
+                    content: "";
+                    width: 60px;
+                    height: 5px;
+                    background-color: $yellow;
+                    position: absolute;
+                    top: 55%;
+                    left: 47%;
+
+               }
+          }
+          p {
+               color: $color-seriy;
+               font-size: 14px;
+          }
+     }
+     .about {
+          margin-top: 80px;
+          margin-bottom: 40px;
+          .card {
+              
+               .card-body {
+                    h1 {
+                         font-size: 36px;
+                         color: $navbar-link;
+                         position: relative;
+                         &::after {
+                              content: "";
+                              position: absolute;
+                              height: 2px;
+                              width: 80px;
+                              background: #222222;
+                              left: 0;
+                              bottom: -22px;
+                         }
+                    }
+                    p {
+                         margin-top: 50px;
+                         font-size: 14px;
+                         color: $color-seriy;
+                         line-height: 26px;
+                         margin-bottom: 30px;
+                    }
+
+               }
+               .card-footer {
+                    a {
+                         color: $navbar-link;
+                         background-color: $yellow;
+                         font-size: 18px;
+                         padding: 17px 27px 17px 27px;
+                         transition: all 0.3s ease;
+                         border-radius: 3px;
+                         &:hover {
+                              color: #fff;
+                              background-color: $navbar-link;
+
+                         }
+                    }
+               }
+          }
+     }
+     // about
+     }
 }

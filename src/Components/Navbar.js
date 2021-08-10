@@ -7,7 +7,7 @@ const Navbar = () => {
      const [show, setShow] = useState(false)
 
      return (
-          <nav className="main-navbar navbar-light bg-light">
+          <nav className="main-navbar navbar-light bg-light shadow">
                <div className="container">
                     <div className="display">
                          <button type="button" className="d-md-none d-block icon" onClick={()=> setShow(!show)}>
