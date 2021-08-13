@@ -258,6 +258,9 @@ body {
 
                     }
                }
+               &.white {
+                    color: $white;
+               }
                &::after {
                     content: "";
                     width: 60px;
@@ -272,6 +275,9 @@ body {
           p {
                color: $color-seriy;
                font-size: 14px;
+               &.white {
+                    color: $white;
+               }
           }
      }
      .about {
@@ -370,6 +376,8 @@ body {
      }
      // stop slider****
      .features {
+          margin-top: 80px;
+          margin-bottom: 60px;
           .right-side {
                h2 {
                     color: $navbar-link;
@@ -421,6 +429,66 @@ body {
           }
      }
      // stop  features
+     .tab-menu {
+          background: #2e3841;
+          padding-bottom: 80px;
+          padding-top: 80px;
+          button {
+                         color: $white;
+                         font-size: 15px;
+                         padding-left: 30px;
+                         position: relative;
+                         border: none;
+                         background-color: unset !important;
+                         margin-bottom: 30px;
+                         font-size: 14px;
+                         &:after {
+                              content: "";
+                              height: 2px;
+                              width: 0;
+                              background-color: $yellow;
+                              transition: all 0.3s ease;
+                              position: absolute;
+                              left: 0;
+                              right: 0;
+                              bottom: 0;
+                              margin: auto;
+                              border-top-right-radius: 6px;
+                              border-bottom-right-radius: 6px;
+                         }
+                         &:hover, &.active {
+                              color: $yellow;
+                              &:after {
+                                   width: 100%;
+                              }
+                         }
+
+                    }
+          .main-img {
+               position: relative;
+               cursor: pointer;
+          }
+          .const {
+               position: absolute !important;
+               top: 0;
+               left: 0;
+               bottom: 0;
+               right: 0;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               text-align: center;
+               overflow: hidden;
+               h1 {
+               background-color: $yellow;
+               color: $white;
+               padding: 50px 30px;
+               opacity: 0.7;
+               }
+          }
+          
+     }
+     // stop tab menu
 
      }
 }
