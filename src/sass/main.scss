@@ -320,11 +320,12 @@ body {
                }
           }
      }
-     // about
-     .slider {
+     //******* stop about************
+          .slider {
           background-color: $yellow;
           padding-top: 70px;
           padding-bottom: 70px;
+          margin-top: 40px;
           .card {
                .card-body {
                     
@@ -367,6 +368,59 @@ body {
                }
           }
      }
+     // stop slider****
+     .features {
+          .right-side {
+               h2 {
+                    color: $navbar-link;
+                    font-size: 36px;
+                    position: relative;
+                    margin-bottom: 20px;
+                    
+                    &:after {
+                    content: "";
+                    position: absolute;
+                    height: 2px;
+                    width: 80px;
+                    background: #222222;
+                    left: 0;
+                    bottom: -22px;
+
+                    }
+               }
+               p {
+                    font-size: 14px;
+                    padding-top: 22px;
+                    color: $color-seriy;
+               }
+               .card {
+                    margin-top: 25px;
+                    .card-body {
+                         padding-left: 0 !important;
+                         a {
+                              font-size: 24px;
+                              color: #f6b60b;
+                              line-height: 50px;
+                              padding: 8px 14px 8px 14px;
+                              text-align: center;
+                              background: #333333;
+                              border: 5px solid #f6b60b;
+                              margin-right: 30px;
+                         }
+                         h3 {
+                              font-size: 18px;
+                              color: $navbar-link;
+                         }
+                         p {
+                              padding-top: 20px;
+                              color: $color-seriy;
+                              font-size: 14px;
+                         }
+                    }
+               }
+          }
+     }
+     // stop  features
 
      }
 }

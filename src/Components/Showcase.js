@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaHome, FaBuilding, FaClock, FaThumbsUp } from "react-icons/fa";
 import Slider from "./Slider"
+import Features from './Features';
 const Showcase = () => {
      return (
           <main>
@@ -117,6 +118,7 @@ const Showcase = () => {
          </section>
          {/* about */}
          <Slider />
+         <Features />
 
           </main>
          
