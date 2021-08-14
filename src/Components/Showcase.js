@@ -3,6 +3,7 @@ import { FaHome, FaBuilding, FaClock, FaThumbsUp } from "react-icons/fa";
 import Slider from "./Slider"
 import Features from './Features';
 import Menu from './Menu';
+import Constructor from './Constructor';
 const Showcase = () => {
      return (
           <main>
@@ -121,6 +122,7 @@ const Showcase = () => {
          <Slider />
          <Features />
          <Menu />
+         <Constructor />
 
           </main>
          
