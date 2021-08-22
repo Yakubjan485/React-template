@@ -4,6 +4,8 @@ import Slider from "./Slider"
 import Features from './Features';
 import Menu from './Menu';
 import Constructor from './Constructor';
+import Achievement from './Achievement';
+import Testimonial from './Testimonial';
 const Showcase = () => {
      return (
           <main>
@@ -123,6 +125,8 @@ const Showcase = () => {
          <Features />
          <Menu />
          <Constructor />
+         <Achievement />
+         <Testimonial />
 
           </main>
          

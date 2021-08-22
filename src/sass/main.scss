@@ -490,6 +490,8 @@ body {
      }
      // stop tab menu
      .constructor {
+          margin-top: 80px;
+          margin-bottom: 70px;
           .card {
                .card-body {
                     background-color: $yellow !important;
@@ -542,6 +544,99 @@ body {
                 }
           }
      }
+     // stop constructor
+     .achievement {
+          background-image: url("../images/achievments_bg.jpg.webp");
+          width: 100%;
+          min-height: 500px;
+          background-size: cover;
+          background-repeat: no-repeat;
+          position: relative;
+          padding-top: 60px;
+          padding-bottom: 50px;
+          .absolute {
+               position: absolute;
+               top: 0;
+               background-color: rgba(0, 0, 0, 0.8);
+               left: 0;
+               right: 0;
+               bottom: 0;
+          }
+          .card {
+               background-color: unset !important;
+               border-right: 3px solid $white !important;
+               margin-top: 45px;
+               .card-body {
+                    span {
+                         color: $white;
+                         font-size: 30px;
+                    }
+                    h1 {
+                         color: $yellow;
+                         font-size: 40px;
+                         display: block;
+                         padding-top: 23px;
+                         padding-bottom: 20px;
+                    }
+                    h2 {
+                         font-size: 14px;
+                         color: $white;
+                    }
+               }
+          }
+
+     }
+     // stop achievement
+     .testimonial {
+          margin-top: 70px;
+          margin-bottom: 70px;
+          background-image: url("../images/portfolio.webp");
+          width: 100%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          min-height: 400px;
+          position: relative;
+          padding-top: 70px;
+          padding-bottom: 70px;
+          .absolute {
+               position: absolute;
+               top: 0;
+               right: 0;
+               bottom: 0;
+               left: 0;
+               background-color: rgba(0, 0, 0, 0.9);
+          }
+          .overlay {
+               position: relative;
+               padding-left: 0 !important;
+               padding-right: 0 !important;
+               .effect {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    justify-content: center;
+                    background-color: $yellow;
+                    opacity: 0;
+                    transform: rotate(0) scale(0);
+                    transition: all 0.4s ease;
+                    h6 {
+                         color: $white;
+                         font-size: 25px;
+                    }
+               }
+               &:hover .effect {
+                    transform: rotate(360deg) scale(1);
+                    opacity: 0.7;
+               }
+          }
+
+     }
+     // stop testimonial*********
 
      }
 }
