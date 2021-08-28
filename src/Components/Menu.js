@@ -38,7 +38,7 @@ const Menu = () => {
                          {menuItems.map((person) => {
                               const {id, title, img, body} = person
                               return(
-                                   <div key={id} className="col-4 mb-3 main-img">
+                                   <div key={id} className="col-lg-4 col-md-6 col-12 mb-3 main-img">
                                         <img src={img} alt={title} className="w-100" />
                                         <div className="const">
                                              <h1>{body}</h1>

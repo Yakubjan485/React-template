@@ -13,11 +13,11 @@ export default class Features extends Component {
                                    </div>
                               </div>
                               {/*  */}
-                              <div className="col-6">
-                                   <img src="/img/feature-man.jpg" alt="cscscs" />
+                              <div className="col-lg-6 col-10 mb-5">
+                                   <img src="/img/feature-man.jpg" alt="cscscs" className="w-100" />
                               </div>
                               {/*  */}
-                              <div className="col-6 right-side">
+                              <div className="col-lg-6 col-12 right-side">
                                    <h2 className="font-roboto-bold">WHY CHOOSE US</h2>
                                    <p>There are many variations of passages of Lorem Ipsum available.</p>
                                    <div className="card border-0">

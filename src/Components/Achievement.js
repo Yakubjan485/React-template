@@ -21,7 +21,7 @@ const Achievement = () => {
                          {people.map((person)=> {
                               const {id, icon, number, info} = person
                               return(
-                                   <div className="col-3" key={id}>
+                                   <div className="col-lg-3 col-sm-6 col-12" key={id}>
                                         <div className="card border-0">
                                              <div className="card-body text-center">
                                                   <span>

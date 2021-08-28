@@ -72,7 +72,7 @@ $white: #fff;
 // *********colors***************
 
 body {
-     margin-bottom: 200px;
+     overflow-x: hidden !important;
      .main-navbar {
           padding-top: 20px;
           position: sticky;
@@ -185,7 +185,6 @@ body {
          
      }
      // stop navbar and its responsive
-     main {
        .showcase {
           background-image: url("../images/slider-2.jpg.webp");
           width: 100%;
@@ -199,6 +198,11 @@ body {
           }
           h6 {
                font-size: 30px;
+               margin-bottom: 20px;
+               margin-top: 20px;
+               @media (max-width: 576px) {
+                    font-size: 25px;
+               }
           }
           p {
                font-size: 14px;
@@ -216,7 +220,7 @@ body {
                }
           }
         } 
-     //    stop showcase
+     //    stop showcase and its responsive *********
      .icons-part {
           background: #f5f5f5;
           padding-top: 70px;
@@ -242,7 +246,7 @@ body {
           
           }
      }
-     // stop icons part
+     // stop icons part and its responsive **********
      .multi-sentences {
           h5 {
                font-size: 24px;
@@ -384,6 +388,9 @@ body {
                     font-size: 36px;
                     position: relative;
                     margin-bottom: 20px;
+                    @media (max-width: 320px) {
+                         font-size: 28px;
+                    }
                     
                     &:after {
                     content: "";
@@ -428,7 +435,7 @@ body {
                }
           }
      }
-     // stop  features
+     // stop  features and its responsive *********
      .tab-menu {
           background: #2e3841;
           padding-bottom: 80px;
@@ -484,11 +491,14 @@ body {
                color: $white;
                padding: 50px 30px;
                opacity: 0.7;
+               @media (max-width: 350px) {
+                    padding: 50px 10px;
+               }
                }
           }
           
      }
-     // stop tab menu
+     // stop tab menu and its responsive ***********
      .constructor {
           margin-top: 80px;
           margin-bottom: 70px;
@@ -542,9 +552,17 @@ body {
                      z-index: 1;
                      transform: translateY(0);
                 }
+                @media (max-width: 768px) {
+                     &:hover .social-media {
+                          transform: translateY(32px);
+                     }
+                }
+                @media (max-width: 576px) {
+                     transform: translateY(60px);
+                }
           }
      }
-     // stop constructor
+     // stop constructor and its responsive ********
      .achievement {
           background-image: url("../images/achievments_bg.jpg.webp");
           width: 100%;
@@ -566,6 +584,10 @@ body {
                background-color: unset !important;
                border-right: 3px solid $white !important;
                margin-top: 45px;
+               @media (max-width: 576px) {
+                    border-bottom: 3px solid #fff !important;
+                    border-right: none !important;
+               }
                .card-body {
                     span {
                          color: $white;
@@ -586,7 +608,7 @@ body {
           }
 
      }
-     // stop achievement
+     // stop achievement and its responsive *****
      .testimonial {
           margin-top: 70px;
           margin-bottom: 70px;
@@ -610,6 +632,7 @@ body {
                position: relative;
                padding-left: 0 !important;
                padding-right: 0 !important;
+               margin-bottom: 15px;
                .effect {
                     position: absolute;
                     top: 0;
@@ -636,7 +659,223 @@ body {
           }
 
      }
-     // stop testimonial*********
+     // stop testimonial and its responsive *********
+    
+      footer {
+          background-image: url("../images/footer.jpg.webp");
+          background-size: cover;
+          width: 100%;
+          background-repeat: no-repeat;
+          position: relative;
+          padding-top: 100px;
+          .absolute {
+               background-color: rgba(0, 0, 0, 0.8);
+               position: absolute;
+               top: 0;
+               bottom: 0;
+               left: 0;
+               right: 0;
+          }
+          h6 {
+               font-size: 18px;
+               color: #fff;
+               padding-bottom: 25px;
 
+          }
+          h5 {
+               font-size: 14px;
+               line-height: 26px;
+               color: #fefefe;
+               padding-top: 22px;
+          }
+          .social {
+               padding-top: 25px;
+            a {
+             color: #fff;  
+             font-size: 14px;
+             border: 2px solid $yellow;
+             line-height: 26px;
+             text-align: center;
+             line-height: 26px;
+             width: 30px;
+             margin-right: 10px;
+            }
+          }
+          .nav {
+               .nav-item {
+                    .nav-link {
+                         padding-left: 0 !important;
+                         color: $white;
+                         font-size: 14px;
+                         transition: all 0.4s ease;
+                         display: flex;
+                         align-items: center;
+                         @media (max-width: 768px) {
+                              padding-left: 15px !important;
+                         }
+                         &:hover {
+                              color: $yellow;
+                         }
+                         p {
+                              transition: all 0.4s ease;
+                              transform: translateX(-15px);
+                         }
+                        &:hover p {
+                             transform: translateX(-5px);
+
+                        }
+                    }
+               }
+               
+          }
+          span {
+               color: $white;
+               transition: all 0.4s ease;
+               &:hover {
+                    color: $yellow;
+               }
+          }
+          p {
+               color: $white;
+               font-size: 14px;
+          }
+          .footer-bottom {
+               background-color: #090909;
+               padding-top: 40px;
+               padding-bottom: 40px;
+               margin-top: 70px;
+          }
      }
+     // stop footer and its respnsive *********
+     .header {
+          background-image: url("../images/banner-bg.jpg.webp");
+          background-repeat: no-repeat;
+          width: 100%;
+          background-size: cover;
+          padding-top: 70px;
+          padding-bottom: 70px;
+          position: relative;
+          .absolute {
+               position: absolute;
+               top: 0;
+               bottom: 0;
+               left: 0;
+               right: 0;
+               background-color: rgba(0,0,0,.8);
+          }
+          h1 {
+               color: $white;
+               margin-bottom: 15px;
+          }
+          a {
+               color: $yellow;
+               font-size: 14px;
+          }
+     }
+     // stop header and its responsive
+     .rescuer {
+          h1 {
+               font-size: 36px;
+               color: $navbar-link;
+               position: relative;
+               &::after {
+               content: "";
+               position: absolute;
+               height: 2px;
+               width: 80px;
+               background: #222222;
+               left: 0;
+               bottom: -22px;
+               }
+          }
+          p {
+               margin-top: 50px;
+               font-size: 14px;
+               color: $color-seriy;
+               line-height: 26px;
+               margin-bottom: 30px;
+          }
+          a {
+               color: #222;
+               background-color: $yellow;
+               font-size: 18px;
+               padding: 17px 27px 17px 27px;
+               transition: all 0.3s ease;
+               border-radius: 3px;
+          &:hover {
+               background-color: $navbar-link;
+               color: $white;
+          }
+          }
+     }
+     // stop rescuer and its responsive *******
+     .touch {
+          background-color: #f6b60b;
+          padding-bottom: 70px;
+          padding-top: 70px;
+          h1 {
+               font-size: 60px;
+               color: $white;
+               @media (max-width: 768px) {
+                    font-size: 45px;
+               }
+          }
+          p {
+               font-size: 30px;
+               color: #fefefe;
+               padding-top: 8px;
+               padding-bottom: 20px;
+               @media (max-width: 768px) {
+                    font-size: 24px;
+               }
+               @media (max-width: 576px) {
+                    font-size: 18px;
+               }
+          }
+          a {
+                         color: #fff;
+                         border: 2px solid $white;
+                         font-size: 18px;
+                         padding: 12px 17px;
+                         @media (max-width: 350px) {
+                         font-size: 15px;
+                         padding: 12px 7px;
+                         }
+
+                    }
+     }
+     // stop touch and its responsive
+     .booking {
+          background-color: $yellow;
+          padding-top: 50px;
+          padding-bottom: 50px;
+          h6 {
+               font-size: 18px;
+               color: $navbar-link;
+          }
+          p {
+               font-size: 14px;
+               color: $color-seriy;
+               padding-top: 5px;
+               @media (max-width: 768px) {
+                    margin-bottom: 30px;
+               }
+          }
+          a {
+               color: $white;
+               background-color: #333;
+               transition: all 0.3s ease;
+               padding: 13px 35px;
+               border-radius: 12px;
+               text-decoration: none !important;
+               &:hover {
+                    background-color: $white;
+                    color: #333;
+               }
+               @media (max-width: 992px) {
+                    padding: 13px 25px;
+               }
+          }
+     }
+     // stop booking and its responsive ********
 }

@@ -5,14 +5,14 @@ const Constructor = () => {
           <section className="constructor">
                <div className="container">
                     <div className="row">
-                         <div className="col-12">
+                         <div className="col-12 mb-5">
                               <div className="multi-sentences">
                                    <h5 className="text-center">OUR TEAM</h5>
                                    <p className="text-center">LOREM IPSUM IS SIMPLY DUMMY TEXT OF THE PRINTING AND TYPESETTING INDUSTRY</p>
                               </div>
                          </div>
                          {/*  */}
-                         <div className="col-3">
+                         <div className="col-lg-3 col-md-6 col-12">
                               <div className="card border-0">
                                    <img src="/img/tm-1.jpg" alt="scsc" className="w-100" />
                                    <div className="card-body text-center">
@@ -36,7 +36,7 @@ const Constructor = () => {
                               </div>
                          </div>
                          {/*  */}
-                         <div className="col-3">
+                         <div className="col-lg-3 col-md-6 col-12">
                               <div className="card border-0">
                                    <img src="/img/tm-2.jpg" alt="scsc" className="w-100" />
                                    <div className="card-body text-center">
@@ -60,7 +60,7 @@ const Constructor = () => {
                               </div>
                          </div>
                          {/*  */}
-                         <div className="col-3">
+                         <div className="col-lg-3 col-md-6 col-12">
                               <div className="card border-0">
                                    <img src="/img/tm-3.jpg" alt="scsc" className="w-100" />
                                    <div className="card-body text-center">
@@ -84,7 +84,7 @@ const Constructor = () => {
                               </div>
                          </div>
                          {/*  */}
-                         <div className="col-3">
+                         <div className="col-lg-3 col-md-6 col-12">
                               <div className="card border-0">
                                    <img src="/img/tm-4.jpg" alt="scsc" className="w-100" />
                                    <div className="card-body text-center">

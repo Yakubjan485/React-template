@@ -27,7 +27,7 @@ const Slider = () => {
                         {people.map((person) => {
                              const {id, image, icon, title, body} = person
                              return(
-                                  <div key={id} className="col-4 mt-5">
+                                  <div key={id} className="col-lg-4 col-md-6 col-12 mt-5">
                                        <div className="card border-0">
                                             <img src={image} alt="vxvxv" className="w-100" />
                                             <div className="card-body text-center">

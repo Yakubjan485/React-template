@@ -12,18 +12,18 @@ const Showcase = () => {
          <section className="showcase">
               <div className="container">
                    <div className="row flex-column">
-                        <div className="col-4 offset-4">
+                        <div className="col-md-4 col-8 offset-md-4 offset-2">
                              <h5 className="text-center font-roboto-medium">WELCOME TO OUR</h5>
                         </div>
                         {/*  */}
-                        <div className="col-8 offset-2">
-                             <h6 className="text-center font-roboto-bold text-white mt-4 mb-5">CLEAN ,MODERN, MULTIPURPOSE THEME</h6>
+                        <div className="col-lg-8 col-12 offset-lg-2">
+                             <h6 className="text-center font-roboto-bold text-white">CLEAN ,MODERN, MULTIPURPOSE THEME</h6>
                         </div>
-                        <div className="col-8 offset-2">
+                        <div className="col-md-8 col-12 offset-md-2 ">
                              <p className="text-center font-robot-light text-white">OUR TEAM OF PROFESSIONALS WILL HELP YOU TURN YOUR DREAM HOME OR FLAT INTO A REALITY FAST. THE LOVE BOAT PROMISES SOMETHING FOR EVERYONE. NOW THE WORLD DON'T MOVE TO THE BEAT OF JUST ONE</p>
                         </div>
                         {/*  */}
-                        <div className="col-4 offset-4">
+                        <div className="col-md-4 col-sm-6 offset-sm-3 col-8 offset-2 offset-md-4">
                              <p className="text-center mt-5">
                              <a className="text-decoration-none font-roboto-black" href="#">READ MORE</a>
                              </p>
@@ -33,11 +33,11 @@ const Showcase = () => {
 
               </div>
          </section>
-         {/* stop show case */}
+         {/* stop show case and its responsive */}
          <section className="icons-part">
               <div className="container">
                    <div className="row">
-                        <div className="col-3">
+                        <div className="col-lg-3 col-sm-6 col-12">
                              <div className="card text-center border-0">
                                  <span className="text-center">
                                        <FaHome />
@@ -49,7 +49,7 @@ const Showcase = () => {
                              </div>
                         </div>
                         {/*  */}
-                        <div className="col-3">
+                        <div className="col-lg-3 col-sm-6 col-12">
                              <div className="card text-center border-0">
                                  <span className="text-center">
                                        <FaBuilding />
@@ -61,7 +61,7 @@ const Showcase = () => {
                              </div>
                         </div>
                         {/*  */}
-                        <div className="col-3">
+                        <div className="col-lg-3 col-sm-6 col-12">
                              <div className="card text-center border-0">
                                  <span className="text-center">
                                        <FaClock />
@@ -73,7 +73,7 @@ const Showcase = () => {
                              </div>
                         </div>
                         {/*  */}
-                        <div className="col-3">
+                        <div className="col-lg-3 col-sm-6 col-12">
                              <div className="card text-center border-0">
                                  <span className="text-center">
                                        <FaThumbsUp />
@@ -87,7 +87,7 @@ const Showcase = () => {
                    </div>
               </div>
          </section>
-         {/* stop icons part */}
+         {/* stop icons part and its responsive */}
          <section className="about">
               <div className="container">
                    <div className="row">
@@ -98,7 +98,7 @@ const Showcase = () => {
                              </div>
                              
                         </div>
-                        <div className="col-7">
+                        <div className="col-lg-7 col-12 mb-5">
                              <div className="card border-0">
                                   <div className="card-body">
                                        <h1>WHO WE ARE</h1>
@@ -114,19 +114,20 @@ const Showcase = () => {
                              </div>
                         </div>
                         {/*  */}
-                        <div className="col-5">
+                        <div className="col-lg-5 col-12">
                              <img src="/img/about_client.jpg" alt="ssfsf" className="w-100" />
                         </div>
                    </div>
               </div>
          </section>
-         {/* about */}
+         {/* about and its responsive */}
          <Slider />
          <Features />
          <Menu />
          <Constructor />
          <Achievement />
          <Testimonial />
+         
 
           </main>
          
